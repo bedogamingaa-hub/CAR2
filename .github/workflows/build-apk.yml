@@ -1,3 +1,4 @@
+        run: |
           npm install
           if [ ! -d "android" ]; then
             npx cap add android
@@ -28,11 +29,10 @@
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.${{ github.run_number }}
-          name: "بيدو درايف (BeDo Gaming APK) — الإصدار v1.0.${{ github.run_number }}"
+          name: "Bedo Drive (BeDo Gaming APK) v1.0.${{ github.run_number }}"
           body: |
-            ### 🎮 بيدو درايف — شوارع مصر (BeDo Gaming)
-            تم بناء ملف الـ APK تلقائياً.
-            - 📥 **اضغط على `BedoDrive-BeDoGaming.apk` بالأسفل لتحميل اللعبة وتثبيتها مباشرة على موبايلك الأندرويد.**
+            ### Bedo Drive - BeDo Gaming Android APK
+            Download `BedoDrive-BeDoGaming.apk` below to install directly on your Android phone.
           files: BedoDrive-BeDoGaming.apk
           draft: false
           prerelease: false
